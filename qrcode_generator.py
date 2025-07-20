@@ -20,7 +20,7 @@ def generate_qr_code(link, filename):
     img.save(filename)
     print(f"QR code generated and saved as {filename}")
 
-# Example usage
-link = input("Enter the link to convert to QR code: ")
-filename = input("Enter the filename to save the QR code (e.g., qr_code.png): ")
-generate_qr_code(link, filename)
+if __name__ == "__main__":
+    link = input("Enter the link to convert to QR code: ")
+    filename = input("Enter the filename to save the QR code (e.g., 'qrcode.png'): ")
+    generate_qr_code(link, filename)
